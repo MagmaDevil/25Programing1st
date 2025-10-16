@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\25Programing1st\\SBSPrograming1\\",
+  "WorkspaceRootPath": "C:\\Users\\USERK\\Desktop\\25Programing1st\\SBSPrograming1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F2779DC-B3E4-418F-8DB8-2A1182F355B4}|2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218.vcxproj|C:\\Users\\Administrator\\Desktop\\25Programing1st\\SBSPrograming1\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{9F2779DC-B3E4-418F-8DB8-2A1182F355B4}|2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218.vcxproj|C:\\Users\\USERK\\Desktop\\25Programing1st\\SBSPrograming1\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F2779DC-B3E4-418F-8DB8-2A1182F355B4}|2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218.vcxproj|solutionrelative:2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0642FA77-92D7-471D-945F-0DED1DDB3134}|1_OT\\1_OT.vcxproj|C:\\Users\\Administrator\\Desktop\\25Programing1st\\SBSPrograming1\\1_OT\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0642FA77-92D7-471D-945F-0DED1DDB3134}|1_OT\\1_OT.vcxproj|C:\\Users\\USERK\\Desktop\\25Programing1st\\SBSPrograming1\\1_OT\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0642FA77-92D7-471D-945F-0DED1DDB3134}|1_OT\\1_OT.vcxproj|solutionrelative:1_OT\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,24 +28,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\25Programing1st\\SBSPrograming1\\1_OT\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\USERK\\Desktop\\25Programing1st\\SBSPrograming1\\1_OT\\main.cpp",
               "RelativeDocumentMoniker": "1_OT\\main.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\25Programing1st\\SBSPrograming1\\1_OT\\main.cpp",
+              "ToolTip": "C:\\Users\\USERK\\Desktop\\25Programing1st\\SBSPrograming1\\1_OT\\main.cpp",
               "RelativeToolTip": "1_OT\\main.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-16T07:38:09.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T07:38:09.931Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\25Programing1st\\SBSPrograming1\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c",
+              "DocumentMoniker": "C:\\Users\\USERK\\Desktop\\25Programing1st\\SBSPrograming1\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c",
               "RelativeDocumentMoniker": "2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\25Programing1st\\SBSPrograming1\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c",
+              "ToolTip": "C:\\Users\\USERK\\Desktop\\25Programing1st\\SBSPrograming1\\2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c",
               "RelativeToolTip": "2_\uC790\uB8CC\uD615\uACFC \uBCC0\uC218\\main.c",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAkwHoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwIQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-10-16T07:37:39.772Z",
               "EditorCaption": ""

@@ -101,8 +101,6 @@ int main()
 	int Defence = 55;
 	int HP = 940;
 	float HealthRegen = 1.28f;
-	int Stamina = 430;
-	float StaminaRegen = 3.2f;
 	float AttackSpeed = 0.1f;
 	float MoveSpeed = 3.5f;
 
@@ -110,8 +108,6 @@ int main()
 	float GrowDefence = 3.0f;
 	float GrowHP = 95.0f;
 	float GrowHealthRegen = 0.077f;
-	float GrowStamina = 15.0f;
-	float GrowStaminaRegen = 0.02f;
 	float GrowAttackSpeed = 0.0f;
 	float GrowMoveSpeed = 0.0f;
 
@@ -122,26 +118,20 @@ int main()
 	printf("공격력 : %d( + %f)\n", Attack, GrowAttack);
 	printf("현재 공격력 : %f\n\n", Attack + (GrowAttack * (Level - 1)));
 
-	printf("방어력 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 방어력 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
+	printf("방어력 : %d( + %f)\n", Defence, GrowDefence);
+	printf("현재 방어력 : %f\n\n", Defence + (GrowDefence * (Level - 1)));
 
-	printf("체력 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 체력 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
+	printf("체력 : %d( + %f)\n", HP, GrowHP);
+	printf("현재 체력 : %f\n\n", HP + (GrowHP * (Level - 1)));
 
-	printf("체력 재생 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 체력 재생 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
+	printf("체력 재생 : %f( + %f)\n", HealthRegen, GrowHealthRegen);
+	printf("현재 체력 재생 : %f\n\n", HealthRegen + (GrowHealthRegen * (Level - 1)));
 
-	printf("스태미나 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 스태미나 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
+	printf("공격 속도 : %f( + %f)\n", AttackSpeed, GrowAttackSpeed);
+	printf("현재 공격 속도 : %f\n\n", AttackSpeed + (GrowAttackSpeed * (Level - 1)));
 
-	printf("스태미나 재생 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 스태미나 재생 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
-
-	printf("공격 속도 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 공격 속도 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
-
-	printf("이동 속도 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 이동 속도 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
+	printf("이동 속도 : %f( + %f)\n", MoveSpeed, GrowMoveSpeed);
+	printf("현재 이동 속도 : %f\n\n", MoveSpeed + (GrowMoveSpeed * (Level - 1)));
 
 	// 분석해보고 싶은 게임의 정보, 수식 표현
 }
