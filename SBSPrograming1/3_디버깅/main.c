@@ -81,7 +81,7 @@ int main()
 	// 게임에서 이차함수 공식으로 쓸 수 있는 예제
 
 	int Level = 1;
-	int HP = 1000000;
+	int HP = 100000;
 	int NowHP = HP;
 	int Hit = 100;
 	int Damage = 0;

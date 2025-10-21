@@ -15,12 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4_main.c">
+    <ClCompile Include="main.c">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Gameinfo.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameInfo.h">
+    <ClInclude Include="Gamelnfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
