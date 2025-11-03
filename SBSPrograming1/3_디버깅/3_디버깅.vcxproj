@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6cd113da-e581-46f3-9649-a403f0bf15e3}</ProjectGuid>
+    <ProjectGuid>{b739d26d-69d6-4581-a56e-c58f0f731d5b}</ProjectGuid>
     <RootNamespace>My3디버깅</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

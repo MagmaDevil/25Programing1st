@@ -1,147 +1,93 @@
 /*
-	날짜: 2025 / 10 / 17
-	학습목표: 디버깅 도구 사용해보기
-	실습목표: 
+2025-10-17
+학습목표 : 디버깅 도구를 사용해보기 //F9를 통해 사용
 */
 
-#include <stdio.h>    // 코드를 작성할 때 표준 입출력 헤더
-					  // C언어로 콘솔창에 글자를 출력 하려면 이 헤더
-
-void Example()
-{
-	printf("3번째 강의 시작!\n");
-
-	Example();
-
-	int num1;						// 정수형 데이터를 저장하는 num1이라는 변수를 선언
-
-	num1 = 10;						// num1의 저장공간에 10이라는 숫자를 저장하겠다.
-
-	int num2 = num1 * 1 + 10;
-
-	num1 = num2;
-
-	printf("num1: %d\n", num1);
-
-	////////////////////////////////////////////////////////
-
-	// 정수
-
-	// 자료형: 메모리의 크기가 얼마나 되는가 + 자료의 정보가 무엇인가?
-	// char: -128 ~ 127
-
-	int num3 = 200;
-
-	char charMaxValue = 127;       // 7f
-
-	char num4 = 200;			   // 문제가 있는 건 알겠는데, 그래서 어떻게 고쳐야 할까?
-
-	// 아트, 프로그래밍, 기획
-	// '메모리' <- 최적화
-	// 그래픽이 뛰어난 결과물 <- 용량이 커짐, 옛날 폰은 안 돌아간다
-
-	printf("num3: %d\n", num3);
-
-	printf("num4: %d\n\n\n\n", num4);
-
-	short num5 = 200;
-
-	long num6 = 200;
-
-	long long num7 = 200;
-
-
-}
-
+//디버깅을 통해 각 오류 지점에 대해서 알수 있다 
 /*
-
-	과제: 게임에서 구현하고 싶은 기능 만들기
-
+ 과제 : 게임에서 구현하고 싶은 기능 만들어 본다.AI
+ c언어를 이용해서 투사체의 포물선 운동을 표현하는 코드를 만들어줘
+ 예상 결과값을 추측하기 힘들다 그 코드를 가져온뒤 궁금하거나 수상한점에
+ 중단점을 건 다음에 어떻게 코드가 돌아가는지 살펴보기
 */
 
-void Hitting()
-{
-	int Level = 1;
-	int HP = 1000000;
-	int NowHP = HP;
-	int Hit = 100;
-	int Damage = 0;
-	int Defence = 5;
-	int HitCombo = 0;
+#include <stdio.h> //std(스탠다드) io(input output) 표준 입출력 헤더
 
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
+void Example() //fuc(함수)
+{
+	printf("안녕");
 }
 
 int main()
 {
-	
-	// 게임에서 이차함수 공식으로 쓸 수 있는 예제
+	printf("3강 시작\n");
+	Example();//변수와 차별하기 위해 ()로 호출해야 한다
 
-	int Level = 1;
-	int HP = 100000;
-	int NowHP = HP;
-	int Hit = 100;
-	int Damage = 0;
-	int Defence = 5;
-	int HitCombo = 0;
+	int num1; //정수형 데이터를 저장하는 num1이라는 변수 선언
+	num1 = 10; //num1이라는 변수에게 10을 할당
 
-	//결과를 1 ~ 10단계로 나눠서 출력
+	int num2 = num1 * 1 + 20;
 
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
-	
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
+	num1 = num2;
 
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
+	printf("%d\n", num1);
+	//도구-> 옵션 -> 텍스트 편집기 c/c++ 줄번호
 
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
+	// 정수
 
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
+	// 자료형은 성질뿐만 아니라 각 자료형마다 메모리의 크기도 다르다
+	// char: -128 ~ 127 사이의 정수를 표현 가능
+	// 자료형의 맨앞은 - 또는 + 
 
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP); 
+	int num3 = 200;
+	unsigned char num4 = 200; //문제가 있는지 알겠는데 , 그래서 어떻게 고쳐야 될까?
+	char charMaxValue = 127; //7f <- 1바이트의 값을 16진수로
+	//overflow 현상 127 -> -128
+
+	// 아트나 기획 
+	//메모리 최적화 개판 but 게임은 goat
+	// 소통을 통해서 결과물 조정
+
+
+	/*
+	short num5 = 200;
+	long num6 = 200;
+	long long num7 = 200;
+	*/
+
+	printf("%d\n", num3);//200 출력
+	printf("%d\n", num4);//출력 X -128~127까지 범위 1바이트(8비트)2의8승 256
 	
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP); 
+	char a = 'A';
+
+	// 롤에서 공식. 
+
+	// 이차 함수를 공식으로 사용하는 하나의 예제
+	// 게임에서 사용할 수 있는 예제 고민
+
+	//step 1 ~ 10;
+	// Result
+	//printf
+
+	int Exp[10];
+	int power[10];
+
+	for (int i = 0; i < 10; i++)
+	{
+		Exp[i] = ( 20 * (i * i) ) + 4 * i + 45;
+		power[i] = (50 * (i * i)) + 2 * i + 10;
+		printf("%d렙에 %d 다음 레벨까지 Exp 필요 현재 %d공격력\n",i+1, Exp[i] , power[i]);
+	}
+	//레벨이 높을수록 경험치를 적게 획득 시켜야 한다
 	
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP); 
+	// 미니언 경험치를 시간이 지날 수록 적게 주게 할까?
+	// -> 챔피언을 죽였는데 경험치 준다 게임의 성질이 틀어짐
+	// 경험치를 갈 수록 크게 획득해야 하면 경험치 요구량을 크게 하게 하자
+	//어떤 방식으로 크게 할까요?
+	//1레벨 10 2레벨 30 3레벨 60 4레벨  MagicNumber 만약 추가로 더 늘려야한다면
+	//어려움 발생 -> 공식으로 하면 빠르게 해결
 	
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
+	//10레벨Debug -> 무엇이 의도한 내용과 달랐는가?
+
 	
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP); 
-	
-	HitCombo += 1;
-	Damage = Hit * (HitCombo * HitCombo) - (Level * Defence);
-	NowHP = NowHP - Damage;
-	printf("%d대 피격! %d Damage... HP: %d\n\n", HitCombo, Damage, NowHP);
 }

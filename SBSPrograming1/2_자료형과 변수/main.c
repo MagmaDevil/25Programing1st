@@ -1,137 +1,83 @@
 /*
-	날짜: 2025 / 10 / 16
-	학습목표: 자료형과 변수
-	실습목표: 실제 게임을 분석해서 자료형을 이해한다.
+* 날짜 : 2025-10-16 
+* 학습목표 : 자료형과 변수
+* 실습목표 : 실제 게임을 분석해서 자료형을 이해한다
 */
 
-// 자료형 Data Type
-// Data: 숫자, 그림, 기호등 정의되어있지 않은 정보
+// 자료형 Data Tyoe
+// Data : 컴퓨터 상에서 숫자,그림,기호 정의되어 있지 않은 정보
 // 컴퓨터에게 명령을 내리고 싶다
-// 더블킬(문자), 킬 수 스코어 정보(정수), 스탯 정보(소수)
-// 이미지 1920 X 1080, 소리(파장)
+// 더블킬(문자) , 킬수 스코어 정보(정수), 스탯 정보(실수)
+// 이미지 1920 * 1080 이미지를 표현하기 위해 픽셀 수 소리(파장)
+//자료들의 특징에 따라 형태를 분류 type을 분류했다 -> 자료형 탄생
+// 자료형 : 문자 , 정수 , 실수
 
-// 자료들의 특징에 따라서 형태를 분류를 했다. Type
-// 자료형: 문자, 정수, 실수
 
-// 자료형을 이용하는 방법
-// 타입 "이름" = 값;		<-	변수
+//코드는 메인함수의 위에서 아래로 실행
 
-// 함수를 사용하는 방법
-// int: 정수
-// float: 실수
-// char: 문자
-// string: 문자열
-
-#include <stdio.h>				
+#include <stdio.h>
 
 int main()
 {
-	// 더블킬 게임에 출력하고 싶다.
-	printf("더블킬\n");
+	//더블킬 게임 화면에 출력하고 싶다
+	printf("더블 킬\n");
 
-	// 레드팀과 블루팀의 스코어를 출력하고 싶다.
-	printf("10 VS 25\n");
+	//레드팀과 블루팀의 스코어를 출력하고 싶다
+	printf("10 vs 20\n");
+	//챔피언이 가지고 있는 스탯을 출력하고 싶다
+	printf("AD ; 20\n");
+	////////////////////////////////////////////////
+	
+	// %%d 를 쓰면 %d로 출력
+	printf("가렌의 정보\n");
+	int level = 2;
 
-	//챔피언이 가지고 있는 스텟을 출력하고 싶다.
-	printf("AD : 10\n");
-	////////////////////////////////////////////////////////
-	int ThreshLevel = 1;
-	int ThreshHP = 620;
-	int ThreshMana = 273;
-	int ThreshAttack = 56;
-	float ThreshAttackSpeed = 0.625f;
-	int ThreshDefence = 33;
+	int GarenfirstlevelHP = 690;
+	float GarenGrowthHP = 98.23f;
+	
+	printf("체력	| %d (+%f)\n" , GarenfirstlevelHP , GarenGrowthHP); //%d 정수 넣는곳
+	printf("현재 체력 : %f \n", GarenfirstlevelHP + (level - 1) * GarenGrowthHP); //%f 실수
 
-	float ThreshGrowHP = 120.0f;
-	float ThreshGrowMana = 44.0f;
-	float ThreshGrowAttack = 2.0f;
-	float ThreshGrowAttackSpeed = 3.5f;
-	float ThreshGrowDefence = 0.0f;
+	int GarenfirstlevelMP = 0;
+	float GarenGrowthMP = 2.76;
 
+	printf("마나	| %d (+%f)\n", GarenfirstlevelMP, GarenGrowthMP);
+	printf("현재 마나 : %f \n", GarenfirstlevelMP + (level - 1) * GarenGrowthMP);
 
-	printf("\n\n쓰레쉬의 정보\n\n");
+	int Garenfirstlevelpower = 69;
+	float GarenGrowthpower = 4.5;
 
-	printf("%d레벨 정보\n\n", ThreshLevel);
+	printf("공격력	| %d (+%f)\n", Garenfirstlevelpower, GarenGrowthpower);
+	printf("현재 공격력 : %f \n", Garenfirstlevelpower + (level - 1) * GarenGrowthpower);
+	
+	int Garenfirstleveldefense = 38;
+	float GarenGrowthdefense = 4.2;
 
-	printf("체력 : %d( + %f)\n", ThreshHP, ThreshGrowHP);
-	printf("현재 체력 : %f\n\n", ThreshHP + (ThreshGrowHP * (ThreshLevel - 1)));
+	printf("방어력	| %d (+%f)\n", Garenfirstleveldefense, GarenGrowthdefense);
+	printf("현재 방어력 : %f \n", Garenfirstleveldefense + (level - 1) * GarenGrowthdefense);
 
-	printf("마나 : %d( + %f)\n", ThreshMana, ThreshGrowMana);
-	printf("현재 마나 : %f\n\n", ThreshMana + (ThreshGrowMana * (ThreshLevel - 1)));
+	printf("따라큐의 정보");
+	int level = 50;
+	float EXP = 2730.23;
 
-	printf("공격력 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 공격력 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
+	printf("다음 레벨까지 필요 레벨 : %f", EXP);
+	
+	int MimikyuHP = 55;
+	printf("따라큐의 현재 체력 : %d", MimikyuHP);
 
-	printf("공격 속도 : %f( + %f)\n", ThreshAttackSpeed, ThreshGrowAttackSpeed);
-	printf("현재 공격 속도 : %f\n\n", ThreshAttackSpeed + (ThreshGrowAttackSpeed * (ThreshLevel - 1)));
+	int MimikyuAttack = 90;
+	printf("따라큐의 현재 공격력 : %d", MimikyuAttack);
 
-	printf("방어력 : %d( + %f)\n", ThreshDefence, ThreshGrowDefence);
-	printf("현재 방어력 : %f\n\n", ThreshDefence + (ThreshGrowDefence * (ThreshLevel - 1)));
+	int MimikyuDefense = 80;
+	printf("따라큐의 현재 방어력 : %d", MimikyuDefense);
 
-	// 이 정보를 컴퓨터가 내가 원하는 대로 실행 했는가?
-	// 만족 VS 조금 더
+	int MimikyuSpAttack = 50;
+	printf("따라큐의 현재 특수공격력 : %d", MimikyuSpAttack);
+	
+	//다음 레벨업마다 다른 스탯 증가
 
-	// 5레벨일때
+	//분석해보고 싶은 게임 선택
+	//분석해보고 싶은 수치를 선택 측정
 
-	ThreshLevel = 5;
-
-	printf("\n\n쓰레쉬의 정보\n\n");
-
-	printf("%d레벨 정보\n\n", ThreshLevel);
-
-	printf("체력 : %d( + %f)\n", ThreshHP, ThreshGrowHP);
-	printf("현재 체력 : %f\n\n", ThreshHP + (ThreshGrowHP * (ThreshLevel - 1)));
-
-	printf("마나 : %d( + %f)\n", ThreshMana, ThreshGrowMana);
-	printf("현재 마나 : %f\n\n", ThreshMana + (ThreshGrowMana * (ThreshLevel - 1)));
-
-	printf("공격력 : %d( + %f)\n", ThreshAttack, ThreshGrowAttack);
-	printf("현재 공격력 : %f\n\n", ThreshAttack + (ThreshGrowAttack * (ThreshLevel - 1)));
-
-	printf("공격 속도 : %f( + %f)\n", ThreshAttackSpeed, ThreshGrowAttackSpeed);
-	printf("현재 공격 속도 : %f\n\n", ThreshAttackSpeed + (ThreshGrowAttackSpeed * (ThreshLevel - 1)));
-
-	printf("방어력 : %d( + %f)\n", ThreshDefence, ThreshGrowDefence);
-	printf("현재 방어력 : %f\n\n", ThreshDefence + (ThreshGrowDefence * (ThreshLevel - 1)));
-
-	// 다른 캐릭터
-
-	int Level = 1;
-	int Attack = 43;
-	int Defence = 55;
-	int HP = 940;
-	float HealthRegen = 1.28f;
-	float AttackSpeed = 0.1f;
-	float MoveSpeed = 3.5f;
-
-	float GrowAttack = 4.5f;
-	float GrowDefence = 3.0f;
-	float GrowHP = 95.0f;
-	float GrowHealthRegen = 0.077f;
-	float GrowAttackSpeed = 0.0f;
-	float GrowMoveSpeed = 0.0f;
-
-	printf("\n\n재키의 정보\n\n");
-
-	printf("%d레벨 정보\n\n", Level);
-
-	printf("공격력 : %d( + %f)\n", Attack, GrowAttack);
-	printf("현재 공격력 : %f\n\n", Attack + (GrowAttack * (Level - 1)));
-
-	printf("방어력 : %d( + %f)\n", Defence, GrowDefence);
-	printf("현재 방어력 : %f\n\n", Defence + (GrowDefence * (Level - 1)));
-
-	printf("체력 : %d( + %f)\n", HP, GrowHP);
-	printf("현재 체력 : %f\n\n", HP + (GrowHP * (Level - 1)));
-
-	printf("체력 재생 : %f( + %f)\n", HealthRegen, GrowHealthRegen);
-	printf("현재 체력 재생 : %f\n\n", HealthRegen + (GrowHealthRegen * (Level - 1)));
-
-	printf("공격 속도 : %f( + %f)\n", AttackSpeed, GrowAttackSpeed);
-	printf("현재 공격 속도 : %f\n\n", AttackSpeed + (GrowAttackSpeed * (Level - 1)));
-
-	printf("이동 속도 : %f( + %f)\n", MoveSpeed, GrowMoveSpeed);
-	printf("현재 이동 속도 : %f\n\n", MoveSpeed + (GrowMoveSpeed * (Level - 1)));
-
-	// 분석해보고 싶은 게임의 정보, 수식 표현
+	return 0;
 }
