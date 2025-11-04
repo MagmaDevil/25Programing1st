@@ -21,7 +21,7 @@ int main()
 	int* playerXPtr = &playerX;
 	int* playerYPtr = &playerY;
 	Test1(playerXPtr, playerYPtr, 2, 5);
-	printf("playerX의 값: %d, playerX의 값: %d\n", playerX, playerY);
+	printf("playerX의 값: %d, playerY의 값: %d\n", playerX, playerY);
 
 	// 상수 지시 포인터는 왜 문법적으로 존재하는가?
 	const double pi = 3.14;
@@ -90,7 +90,7 @@ void Test1(int* xPtr, int* yPtr, int amountX, int amountY)
 	//int amountY = 5;
 
 	*xPtr = (*xPtr) + amountX;
-	*yPtr - (*yPtr) + amountY;
+	*yPtr = (*yPtr) + amountY;
 }
 void Test2(const int* const playerWallet)
 {
