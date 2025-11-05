@@ -6,7 +6,7 @@
 * *numPtr // 주소에 저장된 값을 역참조
 */
 
-void Test1(int* xPtr, int* yPtr, int amountX, int amountY);
+void SelectJob(int* xPtr, int* yPtr, int amountX, int amountY);
 void Test2(const int* const playerWallet);
 void Inventory(const int inventorycount[], const char* inventorytext[]);
 void AddInventory(int inventorycount[], int index, int amount);
@@ -20,7 +20,7 @@ int main()
 	int playerY = 0;
 	int* playerXPtr = &playerX;
 	int* playerYPtr = &playerY;
-	Test1(playerXPtr, playerYPtr, 2, 5);
+	SelectJob(playerXPtr, playerYPtr, 2, 5);
 	printf("playerX의 값: %d, playerY의 값: %d\n", playerX, playerY);
 
 	// 상수 지시 포인터는 왜 문법적으로 존재하는가?
@@ -82,7 +82,7 @@ int main()
 // 
 // 
 
-void Test1(int* xPtr, int* yPtr, int amountX, int amountY)
+void SelectJob(int* xPtr, int* yPtr, int amountX, int amountY)
 {
 	//int x = 0;   // main 전달받은 playerX 값
 	//int y = 0;   // main 전달받은 playerY 값

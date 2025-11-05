@@ -2,7 +2,7 @@
 
 void Func(const char* Group[]);
 
-void Test1()
+void SelectJob()
 {
 	printf("Test1 실습 예제입니다.\n\n");
 
